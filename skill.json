@@ -15,9 +15,9 @@
           "description":
             "Calculate how many pizzas you need to order for your event! Get suggestions on what to order from some popular pizza parlors!",
           "smallIconUri":
-            "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-sm.png",
+            "https://s3.amazonaws.com/pizza-calculator-skill/images/small-pizza-icon.png",
           "largeIconUri":
-            "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-lg.png"
+            "https://s3.amazonaws.com/pizza-calculator-skill/images/large-pizza-icon.png"
         }
       },
       "isAvailableWorldwide": true,

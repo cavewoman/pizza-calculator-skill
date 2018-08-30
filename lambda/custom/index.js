@@ -63,19 +63,34 @@ const HowManyPizzasHandler = {
   async handle(handlerInput) {
     const people =
       handlerInput.requestEnvelope.request.intent.slots.numberOfPeople.value;
-    const slices = people * 2;
-    const pizzas = Math.ceil(slices / 8);
-    const outputSpeech = `You should order ${pizzas} pizzas for ${people} people`;
 
-    return handlerInput.responseBuilder
-      .speak(outputSpeech)
-      .withStandardCard(
-        "You should order...",
-        `${pizzas} pizzas for ${people} people.`,
-        "https://s3.amazonaws.com/pizza-calculator-skill/images/small-pizza-1.png",
-        "https://s3.amazonaws.com/pizza-calculator-skill/images/large-pizza-1.png"
-      )
-      .getResponse();
+    if (people) {
+      const slices = people * 2;
+      const pizzas = Math.ceil(slices / 8);
+      const outputSpeech = `You should order ${pizzas} pizzas for ${people} people`;
+
+      return handlerInput.responseBuilder
+        .speak(outputSpeech)
+        .withStandardCard(
+          "You should order...",
+          `${pizzas} pizzas for ${people} people.`,
+          "https://s3.amazonaws.com/pizza-calculator-skill/images/small-pizza-1.png",
+          "https://s3.amazonaws.com/pizza-calculator-skill/images/large-pizza-1.png"
+        )
+        .getResponse();
+    } else {
+      const outputSpeech =
+        "You did not provide a valid number of people. Please try again.";
+      return handlerInput.responseBuilder
+        .speak(outputSpeech)
+        .withStandardCard(
+          "Try...",
+          `Alexa, ask Pizza Calculator how many pizzas should I order for 15 people`,
+          "https://s3.amazonaws.com/pizza-calculator-skill/images/small-pizza-2.png",
+          "https://s3.amazonaws.com/pizza-calculator-skill/images/large-pizza-2.png"
+        )
+        .getResponse();
+    }
   }
 };
 
@@ -92,7 +107,7 @@ const IntroHandler = {
       .reprompt(outputSpeech)
       .withStandardCard(
         "Welcome To Pizza Calculator!",
-        "Ask what I can do if you need help.",
+        "Ask Pizza Calculator how many pizzas should I order for 13 people.",
         "https://s3.amazonaws.com/pizza-calculator-skill/images/small-pizza-3.png",
         "https://s3.amazonaws.com/pizza-calculator-skill/images/large-pizza-3.png"
       )
@@ -108,11 +123,18 @@ const HelpIntentHandler = {
     );
   },
   handle(handlerInput) {
-    const speechText = "You can introduce yourself by telling me your name";
+    const speechText =
+      "Pizza Calculator calculates the number of pizzas you should order for a group of people. To calculate it for your group say, Alexa, ask Pizza Calculator how many pizzas should I order for ten people";
 
     return handlerInput.responseBuilder
       .speak(speechText)
       .reprompt(speechText)
+      .withStandardCard(
+        "Try...",
+        "Alexa, ask Pizza Calculator how many pizzas should I order for 10 people.",
+        "https://s3.amazonaws.com/pizza-calculator-skill/images/small-pizza-3.png",
+        "https://s3.amazonaws.com/pizza-calculator-skill/images/large-pizza-3.png"
+      )
       .getResponse();
   }
 };
