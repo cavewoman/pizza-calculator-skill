@@ -3,21 +3,21 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Provides the total number of astronauts who are currently in space.",
+          "summary":
+            "Calculates how many pizzas to order for a group of people.",
           "examplePhrases": [
             "Alexa, ask API Starter how many people are in space",
             "Alexa, ask how many astronauts are in space from API Starter",
             "Alexa, ask API Starter how many humans are in space now"
           ],
-          "keywords": [
-            "space",
-            "astronauts",
-            "rocket"
-          ],
-          "name": "API Starter",
-          "description": "Guess how many astronauts are currently in space? Know the answer? Alexa does. Just say: Alexa, ask rocket man how many people in space.",
-          "smallIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-sm.png",
-          "largeIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-lg.png"
+          "keywords": ["pizza", "calculator", "party", "planning"],
+          "name": "Pizza Calculator",
+          "description":
+            "Calculate how many pizzas you need to order for your event! Get suggestions on what to order from some popular pizza parlors!",
+          "smallIconUri":
+            "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-sm.png",
+          "largeIconUri":
+            "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-lg.png"
         }
       },
       "isAvailableWorldwide": true,
@@ -35,12 +35,6 @@
     "manifestVersion": "1.0",
     "privacyAndCompliance": {
       "allowsPurchases": false,
-      "locales": {
-        "en-US": {
-          "termsOfUseUrl": "http://dabblelab.com/terms",
-          "privacyPolicyUrl": "http://dabblelab.com/privacy"
-        }
-      },
       "isExportCompliant": true,
       "containsAds": false,
       "isChildDirected": false,
