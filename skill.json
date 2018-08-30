@@ -6,14 +6,14 @@
           "summary":
             "Calculates how many pizzas to order for a group of people.",
           "examplePhrases": [
-            "Alexa, ask API Starter how many people are in space",
-            "Alexa, ask how many astronauts are in space from API Starter",
-            "Alexa, ask API Starter how many humans are in space now"
+            "Alexa ask Pizza Calculator how many pizzas should I order for ten people",
+            "Alexa ask Pizza Calculator if I have ten people how many pizzas should I order",
+            "Alexa ask Pizza Calculator how to feed ten people"
           ],
           "keywords": ["pizza", "calculator", "party", "planning"],
           "name": "Pizza Calculator",
           "description":
-            "Calculate how many pizzas you need to order for your event! Get suggestions on what to order from some popular pizza parlors!",
+            "Calculate how many pizzas you need to order for your event!",
           "smallIconUri":
             "https://s3.amazonaws.com/pizza-calculator-skill/images/small-pizza-icon.png",
           "largeIconUri":

@@ -27,6 +27,8 @@
           "samples": [
             "how many pizzas should i order for {numberOfPeople} people",
             "if i have {numberOfPeople} people how many pizzas should i order",
+            "how many pizzas should i get for {numberOfPeople} people",
+            "if i have {numberOfPeople} people how many pizzas should i get",
             "how many pizzas do you think {numberOfPeople} people can eat",
             "how many pizzas do you think {numberOfPeople} people will eat",
             "how to feed {numberOfPeople} people"
