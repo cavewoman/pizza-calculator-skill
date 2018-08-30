@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "api starter",
+      "invocationName": "pizza calculator",
       "types": [],
       "intents": [
         {
@@ -17,18 +17,19 @@
           "samples": []
         },
         {
-          "name": "GetRemoteDataIntent",
-          "slots": [],
+          "name": "HowManyPizzasIntent",
+          "slots": [
+            {
+              "name": "numberOfPeople",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
           "samples": [
-            "how many people are in space",
-            "how many people are in space now",
-            "how many people are currently in space",
-            "how many humans are in space",
-            "how many humans are in space now",
-            "how many humans are currently in space",
-            "how many astronauts are in space",
-            "how many astronauts are in space now",
-            "how many astronauts are currently in space"
+            "how many pizzas should i order for {numberOfPeople} people",
+            "if i have {numberOfPeople} people how many pizzas should i order",
+            "how many pizzas do you think {numberOfPeople} people can eat",
+            "how many pizzas do you think {numberOfPeople} people will eat",
+            "how to feed {numberOfPeople} people"
           ]
         }
       ]

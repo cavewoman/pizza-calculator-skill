@@ -21,18 +21,18 @@
         },
         "interactionModel": {
           "en-US": {
-            "eTag": "e52a363e488d4e95e8ba55add6455fa1"
+            "eTag": "6db4cc79bfce2e4a2b9498d5b81e46ce"
           }
         },
         "lambda": [
           {
             "arn": "arn:aws:lambda:us-east-1:467289463218:function:pizza-calculator-skill-api",
-            "functionName": "pizza-calculator-skill-api",
+            "functionName": "arn:aws:lambda:us-east-1:467289463218:function:pizza-calculator-skill-api",
             "awsRegion": "us-east-1",
             "alexaUsage": [
               "custom/default"
             ],
-            "revisionId": "2933f8b0-a018-4040-9764-260396b7eec2"
+            "revisionId": "ffe6b235-188c-4fe8-9f19-4c80ad5d8adb"
           }
         ]
       }
